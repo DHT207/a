@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="./gallery.css">
+    <!-- Liên kết file JavaScript -->
+    <script src="./gallery.js"></script>
+</head>
+<body>
+
+    <!-- Khung hiển thị chính (phải có id="image") -->
+    <div id="image">
+        Hover over an image below to display here.
+    </div>
+
+    <!-- Các hình ảnh nhỏ trong thư viện -->
+    <div class="gallery">
+        <img class="preview" src="image1.jpg" alt="Mô tả cho bức ảnh số 1" onmouseover="upDate(this)" onmouseout="undo()">
+        <img class="preview" src="image2.jpg" alt="Mô tả cho bức ảnh số 2" onmouseover="upDate(this)" onmouseout="undo()">
+        <img class="preview" src="image3.jpg" alt="Mô tả cho bức ảnh số 3" onmouseover="upDate(this)" onmouseout="undo()">
+    </div>
+
+</body>
+</html>
